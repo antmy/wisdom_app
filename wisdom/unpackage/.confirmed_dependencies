@@ -1,0 +1,88 @@
+{
+  "fun.html": {
+    "href": "fun.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "img/qipai.jpg",
+      "img/yuelan.jpg",
+      "img/shufa.png",
+      "img/xiqu.jpg",
+      "img/jianshen.png",
+      "img/wufang.jpg"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "volunteer.html": {
+    "href": "volunteer.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "food.html": {
+    "href": "food.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "guahao.html": {
+    "href": "guahao.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "tijian.html": {
+    "href": "tijian.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "health.html": {
+    "href": "health.html",
+    "resources": [
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "img/cave.png"
+    ],
+    "refer": [
+      "guahao.html",
+      "tijian.html",
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/bac.png"
+    ],
+    "refer": [
+      "fun.html",
+      "volunteer.html",
+      "food.html",
+      "health.html"
+    ],
+    "priority": 0
+  }
+}

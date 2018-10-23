@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			img{
+				margin-top: 20px;
+				margin-left: 24px;
+				margin-bottom: 25px;
+				width: 325px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="index.html"></a>
+		    <h1 class="mui-title">健康管理</h1>
+		</header>
+		<div class="mui-content">
+		    <img src="img/cave.png"/>
+		    <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="potentIll">潜在患病</button>
+		    <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="healthQuestion">健康咨询</button>
+		    <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="doctorAppoint">预约挂号</button>
+		    <button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="physicalExam">定期体检</button>
+			<div class="mui-input-row">
+			    <label></label>
+			    <input type="text" class="mui-input-speech mui-input-clear" placeholder="     语音输入">
+			</div>
+			
+			<div id="menu_1" class="mui-popover mui-popover-bottom mui-popover-action ">
+			    <!-- 可选择菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#">潜在患病</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="#">食品推荐</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="#">药品推荐</a>
+			      </li>
+			    </ul>
+			    <!-- 取消菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#menu_1"><b>取消</b></a>
+			      </li>
+			    </ul>
+			</div>
+			<div id="menu_2" class="mui-popover mui-popover-bottom mui-popover-action ">
+			    <!-- 可选择菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#">病情咨询</a>
+			      </li>
+			      <li class="mui-table-view-cell">
+			        <a href="#">心理咨询</a>
+			      </li>
+			    </ul>
+			    <!-- 取消菜单 -->
+			    <ul class="mui-table-view">
+			      <li class="mui-table-view-cell">
+			        <a href="#menu_2"><b>取消</b></a>
+			      </li>
+			    </ul>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+	<script type="text/javascript">
+		//点击潜在患病按钮从下方弹出操作表menu_1
+		var pI = document.getElementById("potentIll");
+		pI.onclick = function (){
+			mui('#menu_1').popover('toggle');
+		};
+		//点击健康咨询按钮从下方弹出操作表menu_2
+		var hQ = document.getElementById("healthQuestion");
+		hQ.onclick = function(){
+			mui('#menu_2').popover('toggle');
+		};
+		//点击预约挂号按钮打开网址
+		var dA = document.getElementById("doctorAppoint");
+		dA.onclick = function(){
+			mui.openWindow("guahao.html");
+		};
+		//点击定期体检按钮打开网址
+		var pE = document.getElementById("physicalExam");
+		pE.onclick = function(){
+			mui.openWindow("tijian.html");
+		};
+	</script>
+</html>

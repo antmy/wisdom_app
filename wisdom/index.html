@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+    	/*底部导航栏样式调整*/
+    	nav button{
+    		margin-left: 9px;
+    	}
+    	/*主页背景图片和文字样式*/
+    	.mui-content{
+    		height: 615px;
+    		width: 375px;
+    		background:url(img/bac.png)no-repeat center center fixed;
+		}
+		.mui-content span{
+			float: right;
+			margin-right: 15%;
+			margin-top: 30%;
+		}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">智慧养老社区平台</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab">   
+	    <button type="button" class="mui-btn mui-btn-purple" id="health">健康管理</button>
+	    <button type="button" class="mui-btn mui-btn-green" id="fun">休闲服务</button>
+	    <button type="button" class="mui-btn mui-btn-blue" id="food">特色餐饮</button>
+	    <button type="button" class="mui-btn mui-btn-yellow" id="volunteer">志愿服务</button>   
+	</nav>
+	<div class="mui-content">
+	    <span>
+			家有一老<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;如有一宝
+		</span>
+	</div>
+</body>
+<script type="text/javascript">
+	//点击健康管理按钮跳转
+	var health = document.getElementById("health");
+	health.onclick = function(){
+		mui.openWindow("health.html");
+	};
+	//点击休闲服务按钮跳转
+	var fun =document.getElementById("fun");
+	fun.onclick = function(){
+		mui.openWindow("fun.html");
+	};
+	//点击特色餐饮按钮跳转
+	var food =document.getElementById("food");
+	food.onclick = function(){
+		mui.openWindow("food.html");
+	};
+	//点击志愿服务按钮跳转
+	var volunteer =document.getElementById("volunteer");
+	volunteer.onclick = function(){
+		mui.openWindow("volunteer.html");
+	};
+</script>
+</html>
